@@ -29,27 +29,6 @@ flutter run -d chrome
 
 Для физического iPhone выберите свою signing team в Xcode. Для Android требуется Android SDK и JDK.
 
-## Структура
-
-```text
-lib/
-  app/                      # конфигурация, DI и запуск
-  core/                     # сеть, отмена запросов, ошибки и тема
-  features/characters/
-    domain/                 # сущности, контракты, use cases
-    data/                   # API-сервис, DTO, мапперы и репозиторий
-    presentation/           # каталог, детали и общие компоненты
-test/
-  architecture/             # границы слоёв
-  core/
-  features/characters/
-  support/
-```
-
-Управление состоянием — Cubit, HTTP-клиент — Dio. Зависимости передаются через конструкторы и собираются в `AppDependencies`.
-
-Подробнее: [архитектура](docs/architecture.md).
-
 ## Проверки
 
 ```sh
